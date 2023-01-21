@@ -75,7 +75,7 @@ class Femd{
         if(config.block){//block:[RegExp,(e)=>{},type=0|1]
             config.block.map(w=>{
                 var o=w;
-                if(Object.prototype.toString.call(w[0]).slice(8,-1)=="String"){o[0]=RegExp(o[0])}
+                if(Object.prototype.toString.call(w[0]).slice(8,-1)=="String"){o[0]=o[0][o[0].length-1]=="g"?eval(o[0]):RegExp(o[0],"g")}
                 if(Object.prototype.toString.call(w[1]).slice(8,-1)=="String"){o[1]=eval(o[1])}
                 if(o[2]){
                     while([...h_making.matchAll(o[0])].length>0){
