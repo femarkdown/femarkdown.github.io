@@ -1,0 +1,5 @@
+- Getting started
+  - [Home](/)
+  - Docs
+    - [Custom Syntax](Custom.md)
+    - [Compilation order](Compil.md)
