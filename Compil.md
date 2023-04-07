@@ -4,7 +4,6 @@ In order to better customize the syntax, you also need to understand the Compila
 
 For example, #=>\<h1\>occurs before `config.do`, so it is invalid to declare # in `config.do`.
 
-But you don't have to worry about it. We will fix all the sequence problems in 2.1.0.
 
 ## Order
 ### **block**
