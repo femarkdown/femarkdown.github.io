@@ -4,7 +4,6 @@
 
 ![](https://badgen.net/npm/v/femd)
 ![](https://badgen.net/npm/license/femd)
-![](https://badgen.net/npm/node/next)
 
 + About
 + **Install**
@@ -19,7 +18,7 @@ You can learn how to use *markdown++* and how to customize syntax at README.md o
 ### **Usage through\<script\>tag(Browser)**
 Insert in page
 ```html
-<script src="https://cdn.jsdelivr.net/npm/femd/femd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/femd/femd.min.js"></script>
 ```
 
 You can use the Femd class to call(Support chain call).

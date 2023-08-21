@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Markdown++ | Femd</title>
@@ -8,26 +8,12 @@
   <meta name="keywords" content="Markdown,free,extensible,markdown,Javascript,npm">
   <meta name="author" content="Sifer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//fastly.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <script src="https://cdn.jsdelivr.net/gh/femarkdown/Extensible-Markdown/femd.js"></script>
 </head>
 <body>
   <div id="app"></div>
   <script>
-    window.$docsify = {
-      name: '',
-      repo: '',
-      search: 'auto',
-      loadSidebar: true,
-      coverpage: true,
-      onlyCover: true
-    }
+    fetch("./README.md").then(r=>r.text()).then(h=>new Femd(h).toDOM().mount("#app"))
   </script>
-  <!-- Docsify v4 -->
-  <script src="//fastly.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//fastly.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//fastly.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-  <script src="//fastly.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-
 </body>
 </html>
